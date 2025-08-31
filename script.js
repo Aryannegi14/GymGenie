@@ -93,7 +93,7 @@ async function generateWorkout() {
     console.log("Generating workout with these selections:", userSelections);
     
     try {
-        const response = await fetch('http://localhost:3000/generate-workout', {
+        const response = await fetch('/generate-workout', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(userSelections)
@@ -146,3 +146,4 @@ document.getElementById('back-home').addEventListener('click', () => {
 });
 
 showStep(0);
+
