@@ -12,6 +12,12 @@ const groq = new Groq({
 app.use(cors());
 app.use(express.json());
 
+// Add a default GET route
+app.get('/', (req, res) => {
+    res.send('AI Workout Generator Backend - Use POST /generate-workout to get a workout plan.');
+});
+
+// Existing POST route
 app.post('/generate-workout', async (req, res) => {
     try {
         const { muscle, time, level, location } = req.body;
