@@ -1,14 +1,19 @@
 {
-  "name": "gymgenie",
+  "name": "excercise",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "",
+  "main": "script.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "groq-sdk": "^0.5.0"
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "groq-sdk": "^0.30.0"
   }
 }
