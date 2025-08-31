@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workout Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>AI Workout Generator</h1>
+
+        <!-- Step 1: Muscle Group Selection -->
+        <div id="step-1" class="step">
+            <h2>1. Which muscle groups do you want to target?</h2>
+            <div class="options">
+                <button data-value="Full Body">Full Body</button>
+                <button data-value="Chest">Chest</button>
+                <button data-value="Back">Back</button>
+                <button data-value="Biceps">Biceps</button>
+                <button data-value="Triceps">Triceps</button>
+                <button data-value="Shoulders">Shoulders</button>
+                <button data-value="Legs">Legs</button>
+                <button data-value="Core">Core</button>
+            </div>
+        </div>
+
+        <!-- Step 2: Time -->
+        <div id="step-2" class="step hidden">
+            <h2>2. How much time do you have?</h2>
+            <div class="options">
+                <button data-value="15 minutes">15 minutes</button>
+                <button data-value="30 minutes">30 minutes</button>
+                <button data-value="45 minutes">45 minutes</button>
+                <button data-value="60+ minutes">60+ minutes</button>
+            </div>
+            <button class="go-back">Go Back</button>
+        </div>
+
+        <!-- Step 3: Level -->
+        <div id="step-3" class="step hidden">
+            <h2>3. What is your fitness level?</h2>
+            <div class="options">
+                <button data-value="Beginner">Beginner</button>
+                <button data-value="Intermediate">Intermediate</button>
+                <button data-value="Advanced">Advanced</button>
+            </div>
+            <button class="go-back">Go Back</button>
+        </div>
+
+        <!-- Step 4: Location -->
+        <div id="step-4" class="step hidden">
+            <h2>4. Where will you be working out?</h2>
+            <div class="options">
+                <button data-value="Home">Home</button>
+                <button data-value="Gym">Gym</button>
+            </div>
+            <button class="go-back">Go Back</button>
+        </div>
+
+        <!-- Loading & Final Workout Display -->
+        <div id="loading" class="step hidden">
+            <p>Generating your workout...</p>
+        </div>
+
+        <div id="workout-plan" class="step hidden">
+            <h2>Your Custom Workout Plan</h2>
+            <div id="workout-content"></div>
+
+            <!-- Back to homepage -->
+            <div class="back-home-container">
+                <button id="back-home">🏠 Back to Homepage</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
